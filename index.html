@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Försvarsinnovationsbrief 1–13 september 2026. Uppdaterad 13 september kl. 16.38.">
+<meta name="theme-color" content="#071019">
+<title>Försvarsinnovationsbrief | 1–13 september 2026</title>
+<style>
+:root{
+  --ink:#071019; --navy:#0b1d2c; --navy2:#102b40; --paper:#f7f2e8;
+  --gold:#caa65b; --gold2:#e2c47b; --line:#0b1d2c25; --red:#a84f49;
+  --amber:#c99139; --green:#56866c; --max:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.55;
+}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:auto}
+.hero{
+  padding:54px 22px 40px;color:#fff;
+  background:#000;
+  border-bottom:1px solid rgba(202,166,91,.45)
+}
+.brand-logo{display:block;width:173px;height:260px;object-fit:contain;margin:0 0 24px}
+.kicker{
+  display:inline-block;color:var(--gold2);font-weight:850;font-size:.78rem;
+  letter-spacing:.09em;text-transform:uppercase;border:1px solid rgba(226,196,123,.4);
+  padding:6px 10px;border-radius:999px
+}
+.hero h1{
+  margin:18px 0 10px;font-size:clamp(2.35rem,5.4vw,4.9rem);
+  line-height:.98;letter-spacing:-.045em;max-width:980px
+}
+.hero h1 span{color:var(--gold2)}
+.hero .lead{max-width:890px;margin:0;color:#dce5e9;font-size:clamp(1rem,1.8vw,1.25rem)}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.meta span{font-size:.84rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:7px 10px;border-radius:9px}
+nav{
+  position:sticky;top:0;z-index:10;background:rgba(247,242,232,.95);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line);overflow:auto
+}
+nav .wrap{display:flex;gap:7px;padding:9px 14px;min-width:max-content}
+nav a{text-decoration:none;font-weight:800;font-size:.84rem;padding:7px 10px;border-radius:9px}
+nav a:hover{background:var(--navy);color:#fff}
+main{padding:32px 18px 70px}
+.section{margin:0 0 42px;scroll-margin-top:70px}
+.section-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-end;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:16px}
+.section-head h2{margin:0;font-size:clamp(1.55rem,3vw,2.15rem);letter-spacing:-.025em}
+.section-head p{margin:0;color:#5d6870;font-size:.88rem;text-align:right}
+.summary{
+  display:grid;grid-template-columns:1.3fr .7fr;gap:18px;background:var(--navy);color:#fff;
+  border-radius:20px;padding:24px;box-shadow:0 14px 34px rgba(7,16,25,.12)
+}
+.summary h2{margin:0 0 10px;font-size:clamp(1.65rem,3vw,2.3rem);letter-spacing:-.03em}
+.summary p{margin:.45rem 0;color:#dde6ea}
+.summary-side{border-left:1px solid rgba(226,196,123,.35);padding-left:20px}
+.summary-side strong{display:block;color:var(--gold2);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.summary-side ul{margin:0;padding-left:18px}
+.summary-side li{margin:8px 0}
+.keypoints{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.keypoint{background:#fff;border:1px solid var(--line);border-radius:15px;padding:16px}
+.keypoint b{display:block;margin-bottom:5px}
+.keypoint p{margin:0;color:#46545d;font-size:.91rem}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;
+  position:relative;overflow:hidden;box-shadow:0 7px 22px rgba(7,16,25,.045)
+}
+.card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--gold)}
+.card.high:before{background:var(--red)}
+.card.medium:before{background:var(--amber)}
+.date{font-size:.75rem;font-weight:900;letter-spacing:.075em;text-transform:uppercase;color:#68757d}
+.card h3{margin:7px 0 9px;font-size:1.25rem;line-height:1.2;letter-spacing:-.015em}
+.card p{margin:7px 0;color:#33434d}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 9px}
+.tag{font-size:.72rem;font-weight:850;background:#eef0ee;border-radius:999px;padding:5px 8px;color:#3d4b53}
+.tag.hot{background:#f2e2df;color:#843f3a}
+.tag.gold{background:#f4ead5;color:#725720}
+.assess{margin-top:12px;background:#f3efe7;border-left:3px solid var(--gold);border-radius:10px;padding:12px 13px;color:#2d3d46}
+.assess b{display:block;font-size:.73rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px}
+.source{display:inline-flex;margin-top:12px;text-decoration:none;font-weight:850;font-size:.84rem;border-bottom:1px solid var(--gold);padding-bottom:2px}
+.source:hover{color:#8b692b}
+.analysis{
+  background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px
+}
+.analysis p{margin:.55rem 0;color:#33434d}
+.watch{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}
+.watch div{background:var(--navy);color:#fff;border-radius:14px;padding:15px;min-height:118px}
+.watch strong{display:block;color:var(--gold2);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase}
+.watch p{margin:7px 0 0;color:#dce4e8;font-size:.88rem}
+details{background:#fff;border:1px solid var(--line);border-radius:13px;padding:13px 15px;margin-top:10px}
+summary{cursor:pointer;font-weight:850}
+.sources{font-size:.84rem;color:#45535c}
+.sources li{margin:7px 0;word-break:break-word}
+.sources a{color:#725720;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:2px}
+footer{background:#071019;color:#cbd5da;padding:26px 18px;font-size:.82rem}
+footer b{color:var(--gold2)}
+@media(max-width:900px){
+  .summary{grid-template-columns:1fr}
+  .summary-side{border-left:0;border-top:1px solid rgba(226,196,123,.35);padding:15px 0 0}
+  .grid{grid-template-columns:1fr}
+  .keypoints{grid-template-columns:1fr}
+  .watch{grid-template-columns:1fr 1fr}
+}
+@media(max-width:580px){
+  .hero{padding-top:38px}
+  main{padding-left:13px;padding-right:13px}
+  .watch{grid-template-columns:1fr}
+  .section-head{display:block}
+  .section-head p{text-align:left;margin-top:4px}
+}
+@media print{
+  nav{display:none}
+  body{background:#fff}
+  .card,.analysis,details{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="brand-logo" src="data:image/jpeg;base64,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" alt="Svensk OSINT">
+    <div class="kicker">Försvarsinnovationsbrief</div>
+    <h1>Vad förändras i <span>försvarets sätt att utvecklas?</span></h1>
+    <p class="lead">Briefen följer teknik, nya arbetssätt, snabbare inköp och förändringar i försvarsindustrin. Målet är att se vad som faktiskt är på väg från idé och test till militär användning.</p>
+    <div class="meta">
+      <span>1–13 september 2026</span>
+      <span>Uppdaterad 13 september kl. 16.38</span>
+      <span>Sverige • Norden • Europa • Ukraina</span>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#analys">Samlad bedömning</a>
+    <a href="#lage">Lägesbild</a>
+    <a href="#sverige">Sverige</a>
+    <a href="#europa">Europa</a>
+    <a href="#ukraina">Ukraina & partners</a>
+    <a href="#ovrigt">Övrigt</a>
+    <a href="#bevakning">Att följa</a>
+    <a href="#kallor">Källor</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="analys" class="section">
+  <div class="summary">
+    <div>
+      <h2>Samlad bedömning</h2>
+      <p><strong>Kort sagt:</strong> Under perioden har försvarsinnovation blivit mer praktisk. Flera länder försöker få fungerande teknik snabbare från idé och test till beställning, användning och tillverkning. Den största förändringen är alltså inte en enskild ny produkt, utan att hela vägen från militärt behov till färdig förmåga byggs om.</p>
+      <p>Det syns tydligast i Storbritanniens motdrönarprogram, Kanadas drönarinköp efter ukrainsk förebild och Finlands köp av system som redan har provats. Sverige arbetar samtidigt längre fram i kedjan med forskning, AI-försök och demonstratorer för framtida stridsflyg.</p>
+    </div>
+    <div class="summary-side">
+      <strong>Vad har förändrats?</strong>
+      <ul>
+        <li>Behov ska snabbare bli tester och beställningar.</li>
+        <li>Drönare kräver både upptäckt, motmedel, regler och produktion.</li>
+        <li>Fabriker, råvaror och underhåll räknas som en del av förmågan.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="lage" class="section">
+  <div class="summary">
+    <div>
+      <h2>Lägesbild</h2>
+      <p>Under perioden har flera länder tagit beslut som binder ihop behov, test, inköp och produktion. Sverige beställer teknikstudier och flygande demonstratorer för framtida stridsflyg, bygger upp kunskap om nitrocellulosa och köper Himars samtidigt som samarbetet med Finland fördjupas. Storbritannien driver ett snabbspår för motdrönare och planerar samtidigt större skydd av militära baser.</p>
+      <p>På den europeiska nivån har Storbritannien lagt försvar, rymdindustri och satellitförmåga i samma strategi. Kanada bygger en drönaranskaffning efter ukrainsk förebild, medan EU har godkänt 6,1 miljarder euro för ukrainska inköp av bland annat luftvärn, ammunition, drönare och elektronisk krigföring. Ukraina visar samtidigt hur billiga motmedel och obemannade system används i snabb takt.</p>
+    </div>
+    <div class="summary-side">
+      <strong>Det viktigaste just nu</strong>
+      <ul>
+        <li>Fler länder försöker korta vägen från militärt behov till test och inköp.</li>
+        <li>Motdrönare utvecklas som en hel kedja av sensorer, beslut och motmedel.</li>
+        <li>Fabriker, råvaror och underhåll avgör om tekniken kan användas i kris.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="keypoints">
+    <div class="keypoint"><b>Behov till demonstrator</b><p>Vägval stridsflyg och brittiska PANOPTES visar hur teknik ska provas innan ett större materielbeslut.</p></div>
+    <div class="keypoint"><b>Test till anskaffning</b><p>Finlands TREMOS och Sveriges Himars visar två vägar från utveckling eller prövning till faktisk beställning.</p></div>
+    <div class="keypoint"><b>Teknik till produktion</b><p>Kanada, Storbritannien och ARX Robotics visar att nya system måste kopplas till fabriker, leverantörer och underhåll.</p></div>
+  </div>
+</section>
+
+<section id="sverige" class="section">
+  <div class="section-head">
+    <h2>Sverige</h2>
+    <p>Fyra beslut om teknik, forskning och anskaffning</p>
+  </div>
+  <div class="grid">
+
+    <article class="card">
+      <div class="date">1 september • Sverige</div>
+      <h3>Sverige bygger upp egen kunskap om nitrocellulosa</h3>
+      <p>KTH startar kompetenscentrumet Svenskt Krut tillsammans med FMV, FOI och svensk industri. Under fem år ska aktörerna studera råvaror, tillverkning, säker lagring och hur nitrocellulosa kan användas i krut. FMV finansierar satsningen med 100 miljoner kronor.</p>
+      <div class="tags"><span class="tag gold">Hög betydelse</span><span class="tag">Ammunition</span><span class="tag">Försörjningssäkerhet</span></div>
+      <div class="assess"><b>Bedömning</b>Sverige försöker få bättre kontroll över en råvara som behövs för krut och ammunition. Satsningen ger mer kunskap och fler utbildade specialister, men den innebär inte att en svensk krutfabrik redan finns.</div>
+      <a class="source" href="https://www.kth.se/om/nyheter/centrala-nyheter/kth-bygger-svensk-kunskap-om-nitrocellulosa-1.1492382">KTH →</a>
+    </article>
+
+    <article class="card">
+      <div class="date">4 september • Sverige</div>
+      <h3>Regeringen ger FRA uppdrag att pröva AI i cyberskyddet</h3>
+      <p>Regeringen ger FRA i uppdrag att undersöka en AI-stödd nationell cybersäkerhetsförmåga och börja en pilot som kan ge stöd till samhällsviktiga verksamheter. Försvarsmakten ska stödja arbetet. AI betyder här verktyg som kan hjälpa till att upptäcka och hantera cyberhot, inte ett färdigt automatiskt försvar.</p>
+      <div class="tags"><span class="tag gold">Hög betydelse</span><span class="tag">AI</span><span class="tag">Cyber</span></div>
+      <div class="assess"><b>Bedömning</b>AI går här från diskussion till ett begränsat försök i en verklig samhällsfunktion. Det återstår att se om verktygen ger bättre skydd i praktiken. Någon färdig AI-styrd cybersäkerhetsförmåga är ännu inte presenterad.</div>
+      <a class="source" href="https://www.regeringen.se/regeringsuppdrag/2026/09/uppdrag-till-forsvarets-radioanstalt-och-forsvarsmakten-att-analysera-och-paborja-utvecklingen-av-en-ai/">Regeringen →</a>
+    </article>
+
+    <article class="card high">
+      <div class="date">7 september • Sverige/Finland</div>
+      <h3>Sverige beställer Himars och fördjupar artillerisamarbetet med Finland</h3>
+      <p>Sverige köper Himars, ett mobilt raketartillerisystem från Lockheed Martin, för cirka 7 miljarder kronor. De första leveranserna ska ske 2027. Sverige och Finland har samtidigt skrivit en avsiktsförklaring om utbildning, förmågeutveckling, underhåll, försörjningssäkerhet och möjlig produktion.</p>
+      <div class="tags"><span class="tag hot">Mycket hög betydelse</span><span class="tag">Anskaffning</span><span class="tag">Artilleri</span><span class="tag">Finland</span></div>
+      <div class="assess"><b>Bedömning</b>Beställningen ger Sverige en ny förmåga och knyter den till finsk utbildning, underhåll och försörjning. Ett sådant samarbete kan göra det lättare att använda och försörja systemen i kris. Samarbetet om ammunition är fortfarande en avsikt, inte ett färdigt produktionsbeslut.</div>
+      <a class="source" href="https://www.regeringen.se/pressmeddelanden/2026/09/sverige-koper-raketartilleri-och-ingar-svenskt-finskt-artillerisamarbete/">Regeringen →</a>
+    </article>
+
+    <article class="card high">
+      <div class="date">9 september • Sverige</div>
+      <h3>FMV beställer nästa steg för framtidens stridsflyg</h3>
+      <p>FMV har tecknat nya avtal med Saab och GKN Aerospace inom arbetet Vägval stridsflyg. Saab får ett avtal värt cirka 2,9 miljarder kronor och GKN ett värt cirka 390 miljoner kronor. Arbetet pågår till 2028 och omfattar teknikstudier, markdemonstratorer och två flygande demonstratorer som ska kunna flygas autonomt.</p>
+      <div class="tags"><span class="tag hot">Mycket hög betydelse</span><span class="tag">Stridsflyg</span><span class="tag">Demonstratorer</span></div>
+      <div class="assess"><b>Bedömning</b>Sverige betalar nu för att prova tekniken innan landet bestämmer hur nästa stridsflyg ska se ut. Det kan minska risken för dyra felval senare. Avtalen är inte ett beslut om vilket flygsystem Sverige ska köpa.</div>
+      <a class="source" href="https://www.fmv.se/aktuellt--press/aktuella-handelser/nasta-steg-i-utvecklingen-av-framtidens-stridsflygformaga/">FMV →</a>
+    </article>
+
+  </div>
+</section>
+
+<section id="europa" class="section">
+  <div class="section-head">
+    <h2>Europa och Norden</h2>
+    <p>Motdrönare, rymd, robotik och nordisk anskaffning</p>
+  </div>
+  <div class="grid">
+
+    <article class="card high">
+      <div class="date">2 september • Storbritannien</div>
+      <h3>Storbritannien öppnar snabbspår för nya motdrönarsystem</h3>
+      <p>Project PANOPTES ska ta fram en integrerad förmåga mot mindre och billiga drönare. I den första fasen får flera aktörer föreslå hur sensorer, beslut och motmedel kan kopplas ihop. Upp till 5 miljoner pund finns tillgängliga och steg ett ska leda till fortsatt utveckling och tester.</p>
+      <div class="tags"><span class="tag hot">Mycket hög betydelse</span><span class="tag">Motdrönare</span><span class="tag">Test och anskaffning</span></div>
+      <div class="assess"><b>Bedömning</b>Storbritannien försöker göra vägen kortare från ett konkret drönarhot till praktiska tester och ett möjligt framtida inköp. Det är ännu inte ett färdigt system och ingen full serieproduktion är beslutad.</div>
+      <a class="source" href="https://www.gov.uk/government/publications/project-panoptes-protecting-the-force-enabling-manoeuvre/project-panoptes-competition-document">UK Defence Innovation →</a>
+    </article>
+
+    <article class="card high">
+      <div class="date">5 september • Norge</div>
+      <h3>Europeisk raket når omloppsbana från Andøya</h3>
+      <p>Isar Aerospaces raket Spectrum nådde omloppsbana från Andøya Spaceport i Norge och placerade ut nyttolaster. Företaget uppger att nästa raketer redan är i produktion och att en ny fabrik på sikt ska kunna tillverka upp till 40 raketer per år.</p>
+      <div class="tags"><span class="tag hot">Mycket hög betydelse</span><span class="tag">Rymd</span><span class="tag">Uppskjutning</span><span class="tag">Produktion</span></div>
+      <div class="assess"><b>Bedömning</b>Europa får ytterligare en privat bärraket som kan skjuta upp satelliter från europeiskt territorium. Det är inte samma sak som en militär satellitförmåga, men fler raketer och större produktion kan göra det lättare att ersätta satelliter i framtiden.</div>
+      <a class="source" href="https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight">Isar Aerospace →</a>
+    </article>
+
+    <article class="card high">
+      <div class="date">6 september • Tyskland</div>
+      <h3>Tyskland planerar mobila motdrönarenheter efter Leipzigförsöket</h3>
+      <p>Efter försöket till drönarattack vid Leipzig/Halle-flygplatsen planerar den tyska regeringen ett bredare skydd mot drönare, cyberangrepp och sabotage. Enligt Reuters ska mobila polisiära motdrönarförmågor kunna skydda viktiga transportknutpunkter och regeringsområden. Planen omfattar också förslag om att kritisk infrastruktur och försvarsföretag ska få större möjlighet att ingripa mot drönare.</p>
+      <div class="tags"><span class="tag gold">Hög betydelse</span><span class="tag">Organisation</span><span class="tag">Motdrönare</span><span class="tag">Kritisk infrastruktur</span></div>
+      <div class="assess"><b>Bedömning</b>Förslaget gäller inte bara militär utrustning. Det handlar också om vem som får skydda flygplatser och annan viktig infrastruktur, och vilka regler som ska gälla. Det är fortfarande en plan, inte en genomförd utbyggnad.</div>
+      <a class="source" href="https://www.reuters.com/business/media-telecom/germany-plans-anti-sabotage-shield-after-airport-drone-attack-bild-reports-2026-09-06/">Reuters →</a>
+    </article>
+
+    <article class="card high">
+      <div class="date">8 september • Storbritannien</div>
+      <h3>Storbritannien samlar rymdförsvar och industri i ny strategi</h3>
+      <p>Den nya brittiska rymdstrategin samlar försvar, säkerhet och industri i ett program med 7,8 miljarder pund i offentliga investeringar till 2030. Mer än 3 miljarder pund avser försvarsförmågor i rymden. Strategin pekar bland annat ut satellitkommunikation, rymdlägesbild, service av satelliter och säker tillgång till uppskjutningar.</p>
+      <div class="tags"><span class="tag hot">Mycket hög betydelse</span><span class="tag">Rymd</span><span class="tag">Satellitkommunikation</span><span class="tag">Industri</span></div>
+      <div class="assess"><b>Bedömning</b>Storbritannien planerar alltså rymden som både försvar och industri. Pengarna ska bland annat gå till att följa vad som händer i rymden, använda satelliter för spaning och säkra militära samband. Det ger industrin en tydligare långsiktig beställning.</div>
+      <a class="source" href="https://www.gov.uk/government/publications/uk-space-strategy">UK Government →</a>
+    </article>
+
+    <article class="card">
+      <div class="date">9 september • Finland</div>
+      <h3>Finland beställer över 100 mobila granatkastarsystem från Patria</h3>
+      <p>Finland har beställt över 100 Patria TREMOS för 120 millimeters granatkastare. Leveranserna ska börja 2026 och fortsätta till 2028, med option på flera hundra ytterligare system. TREMOS har först provats i en mindre serie och använder befintliga eldrör och ammunition.</p>
+      <div class="tags"><span class="tag gold">Hög betydelse</span><span class="tag">Anskaffning</span><span class="tag">Artilleri</span><span class="tag">Användarnära utveckling</span></div>
+      <div class="assess"><b>Bedömning</b>Finland köper nu ett system som redan har provats i mindre skala. Eftersom det använder befintliga eldrör och ammunition kan landet snabbare utbilda personal och få systemet i bruk.</div>
+      <a class="source" href="https://defence-blog.com/finland-buys-over-100-mobile-mortar-systems-from-patria/">Defence Blog →</a>
+    </article>
+
+    <article class="card high">
+      <div class="date">13 september • Tyskland</div>
+      <h3>ARX vill skala upp markrobotar med hjälp av europeisk industri</h3>
+      <p>Financial Times rapporterar att det tyska försvarsteknikföretaget ARX Robotics söker samarbete med bil- och verkstadsindustrin för att öka produktionen av obemannade markfordon. Systemen används bland annat för transporter och evakuering av skadade. Företaget uppges redan ha byggt upp egen kapacitet men vill använda fler befintliga industrikedjor.</p>
+      <div class="tags"><span class="tag hot">Mycket hög betydelse</span><span class="tag">Robotik</span><span class="tag">Produktion</span><span class="tag">Dual-use</span></div>
+      <div class="assess"><b>Bedömning</b>Försvarsrobotar behöver inte bara fungera tekniskt. De måste också kunna byggas i många exemplar och få reservdelar i tid. ARX försöker därför använda industrikapacitet som redan finns. Det är företagets initiativ, inte ett offentligt produktionsbeslut.</div>
+      <a class="source" href="https://www.ft.com/content/7752631b-6064-4f90-b292-5425064dbaa8">Financial Times →</a>
+    </article>
+
+  </div>
+</section>
+
+<section id="ukraina" class="section">
+  <div class="section-head">
+    <h2>Ukraina och partners</h2>
+    <p>Erfarenheter från kriget påverkar utveckling, inköp och produktion</p>
+  </div>
+  <div class="grid">
+
+    <article class="card">
+      <div class="date">7 september • Ukraina</div>
+      <h3>Ukraina uppger att billigare motmedel slår ut Banderol-drönare</h3>
+      <p>Det ukrainska försvarsteknikklustret Brave1 uppger att en ny lösning redan används mot ryska S8000 Banderol. Teknikens princip och tekniska data har inte offentliggjorts. Brave1 säger att kostnaden för att skjuta ned systemen är betydligt lägre än kostnaden för de missiler som annars kan användas.</p>
+      <div class="tags"><span class="tag gold">Hög betydelse</span><span class="tag">Motdrönare</span><span class="tag">Kostnad</span></div>
+      <div class="assess"><b>Bedömning</b>Om uppgiften stämmer visar den att Ukraina söker motmedel som är billigare än de drönare och robotar de ska stoppa. Det är viktigt i ett krig där många mål kan komma samtidigt. Uppgiften är inte oberoende bekräftad.</div>
+      <a class="source" href="https://www.pravda.com.ua/eng/news/2026/09/07/8052308/">Ukrainska Pravda →</a>
+    </article>
+
+    <article class="card high">
+      <div class="date">10 september • Kanada/Ukraina</div>
+      <h3>Kanada bygger drönaranskaffning efter Ukrainas modell</h3>
+      <p>Kanada startar Defence Drone Initiative Marketplace, en nationell marknadsplats som ska koppla militära användare till nästan 400 godkända leverantörer. De första avtalen är värda upp till 50 miljoner kanadensiska dollar och ska enligt regeringen tiodubbla antalet drönare i de kanadensiska styrkorna. Kanada och Ukraina ska också samarbeta om drönare, motdrönare och prioriterad ammunition.</p>
+      <div class="tags"><span class="tag hot">Mycket hög betydelse</span><span class="tag">Drönare</span><span class="tag">Anskaffning</span><span class="tag">Produktion</span></div>
+      <div class="assess"><b>Bedömning</b>Kanada försöker göra det enklare för militären att hitta leverantörer och köpa sådant som snabbt kan användas. Ukrainas erfarenhet påverkar alltså inte bara drönarnas utformning, utan också hur inköpen organiseras.</div>
+      <a class="source" href="https://www.pm.gc.ca/en/news/news-releases/2026/09/10/canada-and-ukraine-scale-drone-production-build-canadas-defence">Kanadas premiärministerkansli →</a>
+    </article>
+
+    <article class="card high">
+      <div class="date">11 september • EU/Ukraina</div>
+      <h3>EU godkänner 6,1 miljarder euro till ukrainska försvarsinköp</h3>
+      <p>EU-kommissionen har godkänt ytterligare 6,1 miljarder euro för ukrainska inköp av luft- och robotförsvar, ammunition, drönare och elektronisk krigföring. Beslutet gör det också möjligt att köpa PAC-3-missiler till Patriot. Tre undantag gäller ukrainsktillverkade drönare och komponenter, medan två gäller amerikansk utrustning.</p>
+      <div class="tags"><span class="tag hot">Mycket hög betydelse</span><span class="tag">Anskaffning</span><span class="tag">Drönare</span><span class="tag">Luftförsvar</span></div>
+      <div class="assess"><b>Bedömning</b>Pengarna ska gå till sådant Ukraina behöver nu, samtidigt som europeiska och amerikanska företag får beställningar. Att ukrainsktillverkade drönare kan omfattas betyder att Ukraina också kan bidra med egna system, inte bara ta emot färdig materiel.</div>
+      <a class="source" href="https://audiovisual.ec.europa.eu/en/media/video/I-294060">EU-kommissionens audiovisuella tjänst →</a>
+    </article>
+
+    <article class="card high">
+      <div class="date">12 september • Svarta havet</div>
+      <h3>Ukraina uppger att en obemannad båt slog ut en annan</h3>
+      <p>Ukrainas flotta uppger att en Sargan 3000, utrustad med en fjärrstyrd 12,7-millimeters vapenstation, förstörde en rysk obemannad ytfarkost i Svarta havet. Ukrainarna beskriver händelsen som den första striden mellan två obemannade båtar.</p>
+      <div class="tags"><span class="tag hot">Mycket hög betydelse</span><span class="tag">Marint</span><span class="tag">Obemannat</span></div>
+      <div class="assess"><b>Bedömning</b>Om uppgiften stämmer måste obemannade båtar framöver kunna upptäcka och bekämpa andra obemannade båtar. Det förändrar kraven på sensorer, beväpning och ledning till sjöss. Uppgiften är inte oberoende bekräftad.</div>
+      <a class="source" href="https://www.pravda.com.ua/eng/news/2026/09/12/8053129/">Ukrainska Pravda →</a>
+    </article>
+
+  </div>
+</section>
+
+<section id="ovrigt" class="section">
+  <div class="section-head">
+    <h2>Övrigt</h2>
+    <p>En organisatorisk förändring utanför Europa</p>
+  </div>
+  <div class="grid">
+
+    <article class="card">
+      <div class="date">10 september • Israel</div>
+      <h3>Israel skapar en militär gren för AI och obemannade system</h3>
+      <p>Israels försvarsmakt har beslutat att skapa en särskild gren för obemannade system och artificiell intelligens. Enligt försvarsstabschefen Eyal Zamir ska grenen samla teknik från mark, luft och sjö och vara fullt införd i början av december.</p>
+      <div class="tags"><span class="tag gold">Hög betydelse</span><span class="tag">Organisation</span><span class="tag">AI</span><span class="tag">Robotik</span></div>
+      <div class="assess"><b>Bedömning</b>Israel samlar ansvar för AI och obemannade system från mark, luft och sjö i en organisation. Det kan göra det tydligare vem som ska driva utvecklingen. Beslutet säger ännu inget om hur den nya grenen fungerar i praktiken.</div>
+      <a class="source" href="https://breakingdefense.com/2026/09/israeli-military-creates-new-branch-focused-on-ai-drones-and-robotics/">Breaking Defense →</a>
+    </article>
+
+  </div>
+</section>
+
+<section id="bevakning" class="section">
+  <div class="section-head">
+    <h2>Att följa till nästa brief</h2>
+  </div>
+  <div class="watch">
+    <div><strong>23 september</strong><p>Första deadline i brittiska PANOPTES. Vilka aktörer går vidare från plan till praktiska tester?</p></div>
+    <div><strong>30 oktober</strong><p>FRA ska lämna sin första redovisning av hur en AI-stödd nationell cybersäkerhetspilot kan utformas.</p></div>
+    <div><strong>2027</strong><p>De första svenska Himarsleveranserna ska börja. Följ också om samarbetet om ammunition går från avsikt till avtal.</p></div>
+    <div><strong>Löpande</strong><p>EU:s ukrainska drönarinköp, Kanadas produktion, ARX uppskalning och Ukrainas användning av obemannade system till sjöss.</p></div>
+  </div>
+</section>
+
+<section id="kallor" class="section">
+  <div class="section-head">
+    <h2>Källor</h2>
+    <p>Källor kontrollerade till 13 september kl. 16.38</p>
+  </div>
+  <details open>
+    <summary>Om urvalet</summary>
+    <p class="sources">Underlaget har gåtts igenom med separata sökningar på försvarsinnovation, motdrönare, AI, obemannade system, anskaffning, demonstratorer, försvarsstartups, dual-use, försvarsindustri, produktion, ammunition, rymdförsvar samt Sverige, Norden, Europa och Ukraina. Svensk OSINT för vecka 36–37 har också gåtts igenom. Urvalet tar bara med händelser som tillför något om teknik, organisation, anskaffning, industriell förmåga eller operativt lärande. Enskilda produktnyheter utan sådan koppling har sorterats bort.</p>
+  </details>
+  <details>
+    <summary>Källförteckning</summary>
+    <ol class="sources">
+      <li>KTH. <a href="https://www.kth.se/om/nyheter/centrala-nyheter/kth-bygger-svensk-kunskap-om-nitrocellulosa-1.1492382" target="_blank" rel="noopener noreferrer">KTH bygger svensk kunskap om nitrocellulosa</a></li>
+      <li>FMV. <a href="https://www.fmv.se/aktuellt--press/aktuella-handelser/nasta-steg-i-utvecklingen-av-framtidens-stridsflygformaga/" target="_blank" rel="noopener noreferrer">Nästa steg i utvecklingen av framtidens stridsflygförmåga</a></li>
+      <li>Regeringen. <a href="https://www.regeringen.se/regeringsuppdrag/2026/09/uppdrag-till-forsvarets-radioanstalt-och-forsvarsmakten-att-analysera-och-paborja-utvecklingen-av-en-ai/" target="_blank" rel="noopener noreferrer">Uppdrag om AI-stödd nationell cybersäkerhetsförmåga</a></li>
+      <li>Regeringen. <a href="https://www.regeringen.se/pressmeddelanden/2026/09/sverige-koper-raketartilleri-och-ingar-svenskt-finskt-artillerisamarbete/" target="_blank" rel="noopener noreferrer">Sverige köper raketartilleri och ingår svenskt-finskt artillerisamarbete</a></li>
+      <li>UK Defence Innovation. <a href="https://www.gov.uk/government/publications/project-panoptes-protecting-the-force-enabling-manoeuvre/project-panoptes-competition-document" target="_blank" rel="noopener noreferrer">Project PANOPTES</a></li>
+      <li>UK Parliament / Ministry of Defence. <a href="https://questions-statements.parliament.uk/written-questions/detail/2026-08-28/25233" target="_blank" rel="noopener noreferrer">Project PRESAGIUM</a></li>
+      <li>Isar Aerospace. <a href="https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight" target="_blank" rel="noopener noreferrer">Spectrum reaches orbit from Andøya</a></li>
+      <li>Reuters. <a href="https://www.reuters.com/business/media-telecom/germany-plans-anti-sabotage-shield-after-airport-drone-attack-bild-reports-2026-09-06/" target="_blank" rel="noopener noreferrer">Germany plans anti-sabotage shield after airport drone attack</a></li>
+      <li>UK Government. <a href="https://www.gov.uk/government/publications/uk-space-strategy" target="_blank" rel="noopener noreferrer">UK Space Strategy</a></li>
+      <li>Defence Blog. <a href="https://defence-blog.com/finland-buys-over-100-mobile-mortar-systems-from-patria/" target="_blank" rel="noopener noreferrer">Finland buys over 100 mobile mortar systems from Patria</a></li>
+      <li>Financial Times. <a href="https://www.ft.com/content/7752631b-6064-4f90-b292-5425064dbaa8" target="_blank" rel="noopener noreferrer">German military start-up seeks carmakers’ help to re-arm Europe</a></li>
+      <li>Prime Minister of Canada. <a href="https://www.pm.gc.ca/en/news/news-releases/2026/09/10/canada-and-ukraine-scale-drone-production-build-canadas-defence" target="_blank" rel="noopener noreferrer">Canada and Ukraine scale drone production and procurement</a></li>
+      <li>European Commission Audiovisual Service. <a href="https://audiovisual.ec.europa.eu/en/media/video/I-294060" target="_blank" rel="noopener noreferrer">First Board Meeting of the EU-Ukraine Drone Alliance</a></li>
+      <li>Ukrainska Pravda. <a href="https://www.pravda.com.ua/eng/news/2026/09/07/8052308/" target="_blank" rel="noopener noreferrer">Ukraine develops technology to shoot down Russian Banderol missile drones</a></li>
+      <li>Ukrainska Pravda. <a href="https://www.pravda.com.ua/eng/news/2026/09/12/8053129/" target="_blank" rel="noopener noreferrer">Ukrainian drone triumphs: Navy video shows first-ever sea drone battle</a></li>
+      <li>Breaking Defense. <a href="https://breakingdefense.com/2026/09/israeli-military-creates-new-branch-focused-on-ai-drones-and-robotics/" target="_blank" rel="noopener noreferrer">Israeli military creates new branch focused on AI, drones and robotics</a></li>
+    </ol>
+  </details>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap"><b>Försvarsinnovationsbrief</b> • 1–13 september 2026 • Uppdaterad söndag 13 september kl. 16.38. Faktauppgifter bygger på angivna källor. Bedömningar är analytiska.</div>
+</footer>
+</body>
+</html>
